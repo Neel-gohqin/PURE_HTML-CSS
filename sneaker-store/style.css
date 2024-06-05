@@ -22,6 +22,7 @@ body {
   box-sizing: border-box;
   background: rgb(250, 161, 78);
   background: linear-gradient(0deg, rgb(251, 173, 100) 0%, rgba(253, 135, 45, 0.028435886073179262) 75%);
+  user-select: none;
 }
 
 .navBox {
@@ -57,7 +58,7 @@ body {
 .logoBox>a {
   text-decoration: none;
   color: var(--links-color);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: rgb(255 135 5);
 }
 
@@ -173,13 +174,13 @@ body {
 }
 
 .right-div>.land-Shoe img {
-  transform: rotate(24deg) translate(-50px, -60px);
+  transform: rotate(24deg) translate(-35px, -70px);
   width: 640px;
   height: 640px;
 }
 
 .bannerDesc {
-  transform: translate(110px, 110px);
+  transform: translate(110px, 115px);
   width: 26vw;
   height: auto;
 }
@@ -197,7 +198,7 @@ body {
   font-size: 1rem;
   text-align: left;
   white-space: wrap;
-  margin: 10px 0px;
+  padding-top: 15px;
 }
 
 .icon-div-left {
@@ -212,7 +213,7 @@ body {
 }
 
 .left-div button {
-  transform: translate(-74px, 110px);
+  transform: translate(-74px, 132px);
   width: 140px;
   height: 42px;
   border: none;
@@ -248,13 +249,12 @@ body {
 .ovrvwSec-Dsgn>.rvwimagebox {
   width: auto;
   height: auto;
-  padding-right: 10px;
+  padding-right: 12px;
 }
 
 .ovrvwSec-Dsgn>.rvwimagebox>img {
   width: 55px;
   height: 55px;
-  margin-left: 22px;
 }
 
 .ovrvwSec span {
@@ -350,10 +350,12 @@ body {
 }
 
 
+
+/* -------Tablte-view-------- */
 @media screen and (min-width:767px) and (max-width:1024px) {
 
-  .hero {
-    width: 100%;
+  .mainbody {
+    width: 100vw;
     height: auto;
   }
 
@@ -401,8 +403,8 @@ body {
   }
 
   .right-div>.land-Shoe img {
-    transform: rotate(24deg) translate(-18px, -10px);
-    width: 520px;
+    transform: rotate(24deg) translate(-15px, 16px);
+    width: 500px;
     height: 520px;
   }
 
@@ -455,9 +457,10 @@ body {
   .Outmain_lowSec {
     width: 100vw;
     display: flex;
-    height: 110px;
+    height: 108px;
     background-color: rgb(255 135 5);
-    transform: translateY(8px);
+    justify-content: center;
+    align-items: center;
   }
 
   .ovrvwSec {
@@ -491,8 +494,8 @@ body {
 }
 
 
-
-@media screen and (min-width:1024px) and (max-width:1200px) {
+/* ------Laptop & bigger sieze -------- */
+@media screen and (min-width:1024px) and (max-width:1220px) {
 
   .logoBox>a {
     font-size: 1.12rem;
@@ -567,14 +570,9 @@ body {
   }
 
   .left-div button {
-
     transform: translate(-45px, 120px);
     width: 140px;
     height: 42px;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    background-color: #272727;
     font-size: 0.820rem;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
@@ -586,6 +584,8 @@ body {
     height: 115px;
     background-color: rgb(255 135 5);
     transform: translateY(12px);
+    justify-content: center;
+    align-items: center;
   }
 
   .ovrvwSec {
@@ -618,4 +618,235 @@ body {
   }
 }
 
-@media screen and(min-width:1280px)and(max-width:1600px) {}
+
+/*--------Desktop-size---------*/
+@media screen and (min-width:1500px) and (max-width:1680px) {
+
+  .navBox {
+    margin-top: 25px;
+  }
+
+  .rightnavlist>.list-items li {
+    list-style: none;
+    font-size: 1.24em;
+  }
+
+  .logoBox>a {
+    font-size: 1.38em;
+  }
+
+  .srchBar {
+    padding: 2px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+  }
+
+  .srchBar>input {
+    width: 100%;
+    height: 100%;
+    font-size: 0.800rem;
+  }
+
+  .srchBar>input::placeholder {
+    color: #b1adad;
+    font-size: 0.900rem;
+    text-align: left;
+  }
+
+  .cartBox {
+    width: 65px;
+    height: 40px;
+  }
+
+  .userBox button {
+    width: 44px;
+    height: 44px;
+    font-size: 0.610rem;
+  }
+
+  .left-div {
+    width: 40vw;
+    height: 674px;
+  }
+
+  .right-div {
+    width: 60vw;
+    height: 674px;
+  }
+
+  .right-div>.land-Shoe img {
+    transform: rotate(24deg) translate(20px, -18px);
+    width: 800px;
+    height: 800px;
+  }
+
+  .bannerDesc {
+    transform: translate(167px, 175px);
+    width: 22vw;
+    height: auto;
+  }
+
+  .bannerDesc>h1 {
+    width: 20vw;
+    height: auto;
+    font-size: 2.9rem;
+    line-height: 48px;
+    text-align: left;
+    white-space: wrap;
+  }
+
+  .bannerDesc p {
+    font-size: 1.1rem;
+    text-align: left;
+    white-space: wrap;
+    margin-top: 26px;
+  }
+
+  .icon-div-left {
+    transform: translate(150px, 150px);
+    width: 8vw;
+    height: auto;
+  }
+
+  .icon-div-left>img {
+    width: 90px;
+    height: 28px;
+  }
+
+  .left-div button {
+    transform: translate(-68px, 215px);
+    width: 162px;
+    height: 48px;
+    font-size: 0.90rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .left-div button:active {
+    background-color: #000000;
+  }
+
+  .Outmain_lowSec {
+    width: 100vw;
+    display: flex;
+    height: 138px;
+    background-color: rgb(255 135 5);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ovrvwSec {
+    justify-content: center;
+    align-items: center;
+    white-space: wrap;
+    display: flex;
+    width: 25vw;
+    height: 138px;
+  }
+
+  .ovrvwSec-Dsgn>.rvwimagebox {
+    width: auto;
+    height: auto;
+    padding-right: 10px;
+  }
+
+  .ovrvwSec-Dsgn>.rvwimagebox>img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .ovrvwSec span {
+    transform: translateY(-10px);
+    font-weight: 300;
+    font-size: 1.1rem;
+    display: inline-block;
+  }
+
+  .ovrvwSec h1 {
+    font-weight: 450;
+    font-size: 1.9rem;
+  }
+
+  .droplist {
+    display: none;
+    font-size: 0.82rem;
+    list-style: none;
+    position: absolute;
+    padding-left: 15px;
+    width: 100px;
+    height: 58px;
+  }
+
+  .list-items li:nth-child(1):hover .droplist {
+    list-style: none;
+    display: block;
+    color: #eee;
+    margin-top: -1px;
+  }
+
+  .ham-Menu {
+    background-color: rgb(248, 243, 243);
+    border-radius: 10px;
+    width: 30px;
+    height: 25px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition-hambuerger);
+  }
+
+  .bars {
+    border-radius: 2px;
+    width: 22px;
+    height: 2px;
+    background-color: #b1adad;
+    transition: var(--transition-hambuerger);
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .innermenu {
+    display: none;
+    color: white;
+    width: 40vw;
+    height: 70vh;
+    background-color: var(--default-font-color);
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border: var(--default-border);
+  }
+
+  .bars:hover,
+  .ham-Menu:hover {
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 50s;
+  }
+
+  .mobile-menu:hover .innermenu {
+    display: block;
+    color: white;
+    width: 30vw;
+    height: 40vh;
+    text-align: right;
+    padding: 5px 5px 0px 0px;
+    font-size: 0.65rem;
+    border-radius: 2px;
+    background-color: var(--default-font-color);
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border: var(--default-border);
+  }
+
+
+
+}
