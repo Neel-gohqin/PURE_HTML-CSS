@@ -27,11 +27,12 @@ body {
 
 .navBox {
   width: 100%;
-  margin-top: 16px;
   padding: 0.2rem 0rem 0rem 0rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
+  top: 18px;
 }
 
 .rightnavlist>.list-items {
@@ -46,7 +47,7 @@ body {
 
 .rightnavlist>.list-items li {
   list-style: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .rightnavlist a {
@@ -58,7 +59,7 @@ body {
 .logoBox>a {
   text-decoration: none;
   color: var(--links-color);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: rgb(255 135 5);
 }
 
@@ -352,16 +353,16 @@ body {
 
 
 /* -------Tablte-view-------- */
-@media screen and (min-width:767px) and (max-width:1024px) {
+@media screen and (min-width:767px) and (max-width:991px) {
 
   .mainbody {
     width: 100vw;
     height: auto;
   }
 
-  .navBox {
-    width: 100%;
-    margin-top: 20px;
+  .left-div,
+  .right-div {
+    height: 456px;
   }
 
   .rightnavlist>.list-items {
@@ -377,7 +378,7 @@ body {
   .logoBox>a {
     text-decoration: none;
     color: var(--links-color);
-    font-size: 1.1rem;
+    font-size: 1.3em;
     color: rgb(255 135 5);
   }
 
@@ -494,8 +495,8 @@ body {
 }
 
 
-/* ------Laptop & bigger sieze -------- */
-@media screen and (min-width:1024px) and (max-width:1220px) {
+/* ------Laptop & bigger siezes-------- */
+@media screen and (min-width:992px) and (max-width:1024px) {
 
   .logoBox>a {
     font-size: 1.12rem;
@@ -619,26 +620,60 @@ body {
 }
 
 
-/*--------Desktop-size---------*/
-@media screen and (min-width:1500px) and (max-width:1680px) {
+/* 
+@media  and (min-width:1024x) and (max-width:1199px){
+}
+
+
+:default -desktop size 1200-1280 already designed.
+@media  and (min-width:1200px) and (max-width:1280px){
+}
+
+--------larger Monitor-size---------
+@media  and (min-width:1280px) and (max-width:1424px){
+} */
+
+
+
+
+
+/*--------Extra larger Monitor---sizes-------*/
+@media screen and (min-width:1424px) and (max-width:1680px) {
+
+  .rightnavlist>.list-items {
+    display: flex;
+    gap: 45px;
+  }
+
+
+  .logoBox>a {
+    font-size: 1.3rem;
+  }
+
+  .logoBox a span {
+    color: rgb(5 55 250);
+  }
 
   .navBox {
-    margin-top: 25px;
+    position: relative;
+    top: 25px;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .rightnavlist>.list-items li {
     list-style: none;
-    font-size: 1.24em;
+    font-size: 1.34em;
   }
 
   .logoBox>a {
-    font-size: 1.38em;
+    font-size: 1.6em;
   }
 
   .srchBar {
-    padding: 2px;
+    padding-left: 5px;
     width: 150px;
-    height: 40px;
+    height: 42px;
     text-align: center;
   }
 
@@ -655,34 +690,34 @@ body {
   }
 
   .cartBox {
-    width: 65px;
-    height: 40px;
+    width: 64px;
+    height: 42px;
   }
 
   .userBox button {
-    width: 44px;
-    height: 44px;
-    font-size: 0.610rem;
+    width: 46px;
+    height: 46px;
+    font-size: 0.620rem;
   }
 
   .left-div {
     width: 40vw;
-    height: 674px;
+    height: 772px;
   }
 
   .right-div {
     width: 60vw;
-    height: 674px;
+    height: 772px;
   }
 
   .right-div>.land-Shoe img {
-    transform: rotate(24deg) translate(20px, -18px);
-    width: 800px;
-    height: 800px;
+    transform: rotate(24deg) translate(20px, 40px);
+    width: 850px;
+    height: 850px;
   }
 
   .bannerDesc {
-    transform: translate(167px, 175px);
+    transform: translate(127px, 175px);
     width: 22vw;
     height: auto;
   }
@@ -690,21 +725,21 @@ body {
   .bannerDesc>h1 {
     width: 20vw;
     height: auto;
-    font-size: 2.9rem;
+    font-size: 3rem;
     line-height: 48px;
     text-align: left;
     white-space: wrap;
   }
 
   .bannerDesc p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: left;
     white-space: wrap;
-    margin-top: 26px;
+    padding-top: 24px;
   }
 
   .icon-div-left {
-    transform: translate(150px, 150px);
+    transform: translate(105px, 152px);
     width: 8vw;
     height: auto;
   }
@@ -715,9 +750,9 @@ body {
   }
 
   .left-div button {
-    transform: translate(-68px, 215px);
-    width: 162px;
-    height: 48px;
+    transform: translate(-127px, 220px);
+    width: 166px;
+    height: 52px;
     font-size: 0.90rem;
     transition: background-color 0.3s ease-in-out;
   }
@@ -729,7 +764,7 @@ body {
   .Outmain_lowSec {
     width: 100vw;
     display: flex;
-    height: 138px;
+    height: 140px;
     background-color: rgb(255 135 5);
     justify-content: center;
     align-items: center;
@@ -850,3 +885,9 @@ body {
 
 
 }
+
+
+/* extra extra large displays
+@media  adnd (min-width:1680px) and (max-width:1800px) {
+  
+} */
