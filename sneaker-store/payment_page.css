@@ -94,7 +94,7 @@ body {
 }
 
 .tpe-pay>.pyBx {
-  user-select:none;
+  user-select: none;
   width: 120px;
   height: 80px;
   display: flex;
@@ -161,6 +161,13 @@ body {
 .inBox3>input::placeholder {
   font-size: 2.2rem;
   opacity: 75%;
+}
+
+.inBox4>img {
+  color: black;
+  position: relative;
+  bottom: 35px;
+  left: 330px;
 }
 
 
