@@ -159,7 +159,7 @@ body {
   display: flex;
   text-align: center;
   width: 100vw;
-  height: auto;
+  height: 72vh;
   gap: 10px;
 }
 
@@ -233,7 +233,7 @@ body {
 .Outmain_lowSec {
   width: 100vw;
   display: flex;
-  height: 126px;
+  height: 130px;
   background-color: rgb(255 135 5);
 }
 
