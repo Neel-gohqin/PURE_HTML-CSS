@@ -2,8 +2,9 @@
 <center>
 
   <h2>Sneaker store Webspages</h2>
-  <p>animated Design<br>
-    1.product Design<br>
-    2.Cart Design <br>
-    3.Payment page
+  <p>
+    1.animated Design<br>
+    2.product Section/overview<br>
+    3.Cart Design/Section <br>
+    4.Payment page
 </center>
