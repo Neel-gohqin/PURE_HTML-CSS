@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#0d409e, #26D2DA);
+    background-repeat: no-repeat;
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50%;
+    height: auto;
+}
+
+header nav>.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navbar li {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar li:hover{
+    color: rgb(161, 159, 156);
+}
+.navbar img {
+    transform: translateY(6px);
+}
+
+.list {
+    background: linear-gradient(#11b0b6, #13429b);
+    position: relative;
+    width: 410px;
+    height: 420px;
+    user-select: none;
+    top: 100px;
+    backdrop-filter: blur(35px);
+}
+
+
+.list h2 {
+    background-color: rgb(12, 65, 126);
+    color: rgb(4, 34, 61);
+    padding: 10px 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.list ul {
+    position: relative;
+    padding: 20px;
+}
+
+.list ul li {
+    position: relative;
+    list-style: none;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(138, 135, 135);
+}
+
+.list ul li:last-child {
+    border-bottom: none;
+}
+
+.list ul li label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.list ul li label input {
+    border: none;
+    outline: none;
+    appearance: none;
+    font-size: 1rem;
+    padding: 12px;
+    width: 140%;
+    background: transparent;
+}
+
+input::placeholder {
+    font-size: 1rem;
+    color: #123447;
+}
+
+.list ul li label p {
+    position: absolute;
+}
+
+.list ul li label span {
+    position: relative;
+    width: 32px;
+    height: 22px;
+    border: 1px solid rgb(152, 136, 241);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ul li label span::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    transform: rotate(-40deg);
+}
+
+.list ul li label input:checked~p .inck {
+
+    text-decoration: line-through;
+    color: #bdb5b5;
+}
+
+
+.list ul li label input:checked~span {
+
+    background-color: rgb(30, 64, 173);
+    border: 1px solid rgb(11, 41, 141);
+}
+
+.list ul li label input:checked~span::before {
+
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.header {
+    position: relative;
+    bottom: 500px;
+    right: 450px;
+    text-align: justify;
+    line-height: 60px;
+}
+
+.header h1 {
+    font-size: 4rem;
+    font-weight: 540;
+}
+
+.header p {
+    font-size: 2.8rem;
+    font-weight: 540;
+}
