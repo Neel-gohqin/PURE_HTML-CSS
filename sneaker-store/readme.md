@@ -8,3 +8,5 @@
     3.Cart Design/Section <br>
     4.Payment page
 </center>
+
+Preview:-> https://eclectic-torrone-f00486.netlify.app/
