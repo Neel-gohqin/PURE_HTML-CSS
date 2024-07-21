@@ -1,5 +1,5 @@
 <center>
-<h2>BAKERY WEBSITE LANDING PAGE</h2>
+<h2>BAKERY WEBSITE</h2>
 <p>
 1.Responsive For all Devices<br>
 2.Animated content<br>
