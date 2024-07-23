@@ -11,4 +11,4 @@
 
 
 
-Preview:-> <strong>Only in Laptp/Desktop</strong>  https://velvety-jalebi-03afe8.netlify.app/
+Preview:-> <strong>Only in Laptop/Desktop</strong>  https://velvety-jalebi-03afe8.netlify.app/
