@@ -9,4 +9,6 @@
     4.Payment page
 </center>
 
-Preview:-> https://eclectic-torrone-f00486.netlify.app/
+
+
+Preview:-> <strong>Only in Laptp/Desktop</strong>  https://velvety-jalebi-03afe8.netlify.app/
