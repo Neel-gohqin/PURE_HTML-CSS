@@ -6,5 +6,7 @@
 3.card Design<br>
 4.product overview
   
-Preview:-> https://friendly-baklava-2fc803.netlify.app/
+
+
+<a href="https://friendly-baklava-2fc803.netlify.app/" style="text-decoration: none;">Preview</a> - https://friendly-baklava-2fc803.netlify.app/
 </center>
