@@ -23,16 +23,17 @@ body {
   background: rgb(250, 161, 78);
   background: linear-gradient(0deg, rgb(251, 173, 100) 0%, rgba(253, 135, 45, 0.028435886073179262) 75%);
   user-select: none;
+  height: 100vh;
 }
 
 .navBox {
   width: 100%;
-  padding: 0.2rem 0rem 0rem 0rem;
+  padding: 1rem 0rem 0rem 0rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   position: relative;
-  top: 18px;
+
 }
 
 .rightnavlist>.list-items {
@@ -233,7 +234,7 @@ body {
 .Outmain_lowSec {
   width: 100vw;
   display: flex;
-  height: 130px;
+  height: auto;
   background-color: rgb(255 135 5);
 }
 
@@ -243,7 +244,7 @@ body {
   white-space: wrap;
   display: flex;
   width: 25vw;
-  height: 122px;
+  height: 118px;
   color: white;
 }
 
@@ -352,13 +353,182 @@ body {
 
 
 
-/* -------Tablte-view-------- */
-@media screen and (min-width:767px) and (max-width:992px) {
+@media screen and (min-width:375px) and (max-width:767px) {
 
-  .mainbody {
+
+  .navBox {
+    width: 100%;
+    padding: 1rem 0rem 0rem 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+  }
+
+  .rightnavlist>.list-items {
+
+    display: none;
+  }
+
+  .logoBox>a {
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+
+
+  .srchBar {
+    padding: 2px;
+    width: 120px;
+    height: 28px;
+    gap: 10px;
+  }
+
+
+
+  .cartBox {
+    width: 62px;
+    height: 28px;
+  }
+
+  .bag-container {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    padding-top: 1px;
+    color: #c9c6c6;
+  }
+
+  .userBox button {
+    transition: 0.7s;
+    width: 38px;
+    height: 38px;
+    font-size: 0.575rem;
+  }
+
+  .hero {
+    display: flex;
     width: 100vw;
+    height: 81vh;
+    flex-direction: column;
+  }
+  
+  .left-div {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .right-div {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .right-div>.land-Shoe img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .bannerDesc {
+    width: 100%;
+    height: auto;
+    transform: translate(6px, 80px);
+
+  }
+
+  .bannerDesc>h1 {
+    width: 100%;
+    height: auto;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .bannerDesc p {
+    font-size: 0.7rem;
+    white-space: wrap;
+    text-align: center;
+  }
+
+  .icon-div-left {
+    transform: translate(175px, 30px);
+    width: 8vw;
     height: auto;
   }
+
+  .icon-div-left>img {
+    width: 90px;
+    height: 28px;
+  }
+
+  .left-div button {
+    transform: translate(0px, 118px);
+    width: 140px;
+    height: 42px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #272727;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .left-div button:active {
+    background-color: #000000;
+  }
+
+  .Outmain_lowSec {
+    width: 100%;
+    display: flex;
+    height: auto;
+    background-color: rgb(255 135 5);
+  }
+
+  .ovrvwSec {
+    justify-content: center;
+    align-items: center;
+    white-space: wrap;
+    display: flex;
+    width: 25vw;
+    height: 85px;
+    color: white;
+  }
+
+  .ovrvwSec-Dsgn>.rvwimagebox {
+    width: auto;
+    height: auto;
+    padding-right: 12px;
+  }
+
+  .ovrvwSec-Dsgn>.rvwimagebox>img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ovrvwSec span {
+    transform: translateY(-10px);
+    font-weight: 300;
+    font-size: 0.6rem;
+    display: inline-block;
+  }
+
+  .ovrvwSec h1 {
+    font-weight: 450;
+    font-size:1rem;
+  }
+
+
+
+
+}
+
+
+/* -------Tablte-view-------- */
+@media screen and (min-width:767px) and (max-width:1024px) {
+
 
   .left-div,
   .right-div {
@@ -404,9 +574,9 @@ body {
   }
 
   .right-div>.land-Shoe img {
-    transform: rotate(24deg) translate(-15px, 16px);
+    transform: rotate(24deg) translate(-15px, -16px);
     width: 500px;
-    height: 520px;
+    height: 500px;
   }
 
   .bannerDesc {
@@ -495,129 +665,6 @@ body {
 }
 
 
-/* ------Laptop & bigger siezes-------- */
-@media screen and (min-width:992px) and (max-width:1024px) {
-
-  .logoBox>a {
-    font-size: 1.12rem;
-  }
-
-  .srchBar {
-    padding: 4px;
-    width: 105px;
-    height: 33px;
-  }
-
-  .cartBox {
-    width: 55px;
-    height: 33px;
-  }
-
-  .userBox button {
-    transition: 0.7s;
-    margin-right: 10px;
-    width: 40px;
-    height: 40px;
-    font-size: 0.600rem;
-  }
-
-  .icon-div-left {
-    transform: translate(88px, 100px);
-    width: 8vw;
-    height: auto;
-  }
-
-  .icon-div-left>img {
-    width: 72px;
-    height: 22px;
-  }
-
-  .right-div>.land-Shoe img {
-    transform: rotate(24deg) translate(10px, -26px);
-    width: 580px;
-    height: 580px;
-  }
-
-  .rightnavlist>.list-items {
-    display: flex;
-    gap: 22px;
-  }
-
-  .rightnavlist>.list-items li {
-    list-style: none;
-    font-size: 1.05rem;
-  }
-
-  .bannerDesc {
-    transform: translate(90px, 105px);
-    width: 30vw;
-    height: auto;
-  }
-
-  .bannerDesc p {
-    font-size: 0.950rem;
-    text-align: left;
-    white-space: wrap;
-    margin: 14px 0px;
-  }
-
-  .bannerDesc>h1 {
-    width: 32vw;
-    height: auto;
-    font-size: 2.3rem;
-    line-height: 36px;
-    text-align: left;
-    white-space: wrap;
-  }
-
-  .left-div button {
-    transform: translate(-45px, 120px);
-    width: 140px;
-    height: 42px;
-    font-size: 0.820rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-
-  .Outmain_lowSec {
-    width: 100vw;
-    display: flex;
-    height: 115px;
-    background-color: rgb(255 135 5);
-    transform: translateY(12px);
-    justify-content: center;
-    align-items: center;
-  }
-
-  .ovrvwSec {
-    white-space: wrap;
-    display: flex;
-    width: 100%;
-    height: auto;
-    color: white;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .ovrvwSec-Dsgn>.rvwimagebox>img {
-    transform: translateX(-23px);
-    width: 50px;
-    height: 50px;
-  }
-
-  .ovrvwSec span {
-    transform: translate(-24px, -8px);
-    font-weight: 300;
-    font-size: 0.980rem;
-    display: inline-block;
-  }
-
-  .ovrvwSec h1 {
-    transform: translateX(-25px);
-    font-weight: 450;
-    font-size: 1.5rem;
-  }
-}
 
 
 /* 
@@ -637,265 +684,186 @@ body {
 
 
 
-/*--------Extra larger Monitor---sizes-------*/
-@media screen and (min-width:1424px) and (max-width:1680px) {
+  /*--------Extra larger Monitor---sizes-------*/
+  @media screen and (min-width:1424px) and (max-width:1680px) {
 
-  .rightnavlist>.list-items {
-    display: flex;
-    gap: 45px;
-  }
-  .mainbody{
-    width: 100%;
-    height: auto;
-  }
-  .hero{
-    width: 100%;
-    height: 80vh;
-  }
+    .rightnavlist>.list-items {
+      display: flex;
+      gap: 45px;
+    }
+
+    .mainbody {
+      width: 100%;
+      height: auto;
+    }
+
+    .hero {
+      width: 100%;
+      height: 80vh;
+    }
 
 
-  .logoBox>a {
-    font-size: 1.3rem;
-  }
+    .logoBox>a {
+      font-size: 1.3rem;
+    }
 
-  .logoBox a span {
-    color: rgb(5 55 250);
-  }
+    .logoBox a span {
+      color: rgb(5 55 250);
+    }
 
-  .navBox {
-    position: relative;
-    top: 25px;
-    justify-content: space-around;
-    align-items: center;
-  }
+    .navBox {
+      position: relative;
+      top: 25px;
+      justify-content: space-around;
+      align-items: center;
+    }
 
-  .rightnavlist>.list-items li {
-    list-style: none;
-    font-size: 1.34em;
-  }
+    .rightnavlist>.list-items li {
+      list-style: none;
+      font-size: 1.34em;
+    }
 
-  .logoBox>a {
-    font-size: 1.6em;
-  }
+    .logoBox>a {
+      font-size: 1.6em;
+    }
 
-  .srchBar {
-    padding-left: 5px;
-    width: 150px;
-    height: 42px;
-    text-align: center;
-  }
+    .srchBar {
+      padding-left: 5px;
+      width: 150px;
+      height: 42px;
+      text-align: center;
+    }
 
-  .srchBar>input {
-    width: 100%;
-    height: 100%;
-    font-size: 0.800rem;
-  }
+    .srchBar>input {
+      width: 100%;
+      height: 100%;
+      font-size: 0.800rem;
+    }
 
-  .srchBar>input::placeholder {
-    color: #b1adad;
-    font-size: 0.900rem;
-    text-align: left;
-  }
+    .srchBar>input::placeholder {
+      color: #b1adad;
+      font-size: 0.900rem;
+      text-align: left;
+    }
 
-  .cartBox {
-    width: 64px;
-    height: 42px;
-  }
+    .cartBox {
+      width: 64px;
+      height: 42px;
+    }
 
-  .userBox button {
-    width: 46px;
-    height: 46px;
-    font-size: 0.620rem;
-  }
+    .userBox button {
+      width: 46px;
+      height: 46px;
+      font-size: 0.620rem;
+    }
 
-  .left-div {
-    width: 40vw;
-    height: 772px;
-  }
+    .left-div {
+      width: 40vw;
+      height: 772px;
+    }
 
-  .right-div {
-    width: 60vw;
-    height: 772px;
-  }
+    .right-div {
+      width: 60vw;
+      height: 772px;
+    }
 
-  .right-div>.land-Shoe img {
-    transform: rotate(24deg) translate(20px, 40px);
-    width: 850px;
-    height: 850px;
-  }
+    .right-div>.land-Shoe img {
+      transform: rotate(24deg) translate(20px, 30px);
+      width: 850px;
+      height: 850px;
+    }
 
-  .bannerDesc {
-    transform: translate(127px, 175px);
-    width: 22vw;
-    height: auto;
-  }
+    .bannerDesc {
+      transform: translate(127px, 175px);
+      width: 22vw;
+      height: auto;
+    }
 
-  .bannerDesc>h1 {
-    width: 20vw;
-    height: auto;
-    font-size: 3rem;
-    line-height: 48px;
-    text-align: left;
-    white-space: wrap;
-  }
+    .bannerDesc>h1 {
+      width: 20vw;
+      height: auto;
+      font-size: 3rem;
+      line-height: 48px;
+      text-align: left;
+      white-space: wrap;
+    }
 
-  .bannerDesc p {
-    font-size: 1.2rem;
-    text-align: left;
-    white-space: wrap;
-    padding-top: 24px;
-  }
+    .bannerDesc p {
+      font-size: 1.2rem;
+      text-align: left;
+      white-space: wrap;
+      padding-top: 24px;
+    }
 
-  .icon-div-left {
-    transform: translate(105px, 152px);
-    width: 8vw;
-    height: auto;
-  }
+    .icon-div-left {
+      transform: translate(105px, 152px);
+      width: 8vw;
+      height: auto;
+    }
 
-  .icon-div-left>img {
-    width: 90px;
-    height: 28px;
-  }
+    .icon-div-left>img {
+      width: 90px;
+      height: 28px;
+    }
 
-  .left-div button {
-    transform: translate(-127px, 220px);
-    width: 166px;
-    height: 52px;
-    font-size: 0.90rem;
-    transition: background-color 0.3s ease-in-out;
-  }
+    .left-div button {
+      transform: translate(-127px, 220px);
+      width: 166px;
+      height: 52px;
+      font-size: 0.90rem;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-  .left-div button:active {
-    background-color: #000000;
-  }
+    .left-div button:active {
+      background-color: #000000;
+    }
 
-  .Outmain_lowSec {
-    width: 100vw;
-    display: flex;
-    height: 143px;
-    background-color: rgb(255 135 5);
-    justify-content: center;
-    align-items: center;
-  }
+    .Outmain_lowSec {
+      width: 100vw;
+      display: flex;
+      height: auto;
+      background-color: rgb(255 135 5);
+      justify-content: center;
+      align-items: center;
+    }
 
-  .ovrvwSec {
-    justify-content: center;
-    align-items: center;
-    white-space: wrap;
-    display: flex;
-    width: 25vw;
-    height: 138px;
-  }
+    .ovrvwSec {
+      justify-content: center;
+      align-items: center;
+      white-space: wrap;
+      display: flex;
+      width: 25vw;
+      height: 130px;
+    }
 
-  .ovrvwSec-Dsgn>.rvwimagebox {
-    width: auto;
-    height: auto;
-    padding-right: 10px;
-  }
+    .ovrvwSec-Dsgn>.rvwimagebox {
+      width: auto;
+      height: auto;
+      padding-right: 10px;
+    }
 
-  .ovrvwSec-Dsgn>.rvwimagebox>img {
-    width: 70px;
-    height: 70px;
-  }
+    .ovrvwSec-Dsgn>.rvwimagebox>img {
+      width: 70px;
+      height: 70px;
+    }
 
-  .ovrvwSec span {
-    transform: translateY(-10px);
-    font-weight: 300;
-    font-size: 1.1rem;
-    display: inline-block;
-  }
+    .ovrvwSec span {
+      transform: translateY(-10px);
+      font-weight: 300;
+      font-size: 1.1rem;
+      display: inline-block;
+    }
 
-  .ovrvwSec h1 {
-    font-weight: 450;
-    font-size: 1.9rem;
-  }
+    .ovrvwSec h1 {
+      font-weight: 450;
+      font-size: 1.9rem;
+    }
 
-  .droplist {
-    display: none;
-    font-size: 0.82rem;
-    list-style: none;
-    position: absolute;
-    padding-left: 15px;
-    width: 100px;
-    height: 58px;
-  }
 
-  .list-items li:nth-child(1):hover .droplist {
-    list-style: none;
-    display: block;
-    color: #eee;
-    margin-top: -1px;
-  }
-
-  .ham-Menu {
-    background-color: rgb(248, 243, 243);
-    border-radius: 10px;
-    width: 30px;
-    height: 25px;
-    margin-right: 8px;
-    border: 1px solid #ccc;
-    display: flex;
-    gap: 5px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: var(--transition-hambuerger);
-  }
-
-  .bars {
-    border-radius: 2px;
-    width: 22px;
-    height: 2px;
-    background-color: #b1adad;
-    transition: var(--transition-hambuerger);
-  }
-
-  .mobile-menu {
-    display: none;
-  }
-
-  .innermenu {
-    display: none;
-    color: white;
-    width: 40vw;
-    height: 70vh;
-    background-color: var(--default-font-color);
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    border: var(--default-border);
-  }
-
-  .bars:hover,
-  .ham-Menu:hover {
-    width: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: 50s;
-  }
-
-  .mobile-menu:hover .innermenu {
-    display: block;
-    color: white;
-    width: 30vw;
-    height: 40vh;
-    text-align: right;
-    padding: 5px 5px 0px 0px;
-    font-size: 0.65rem;
-    border-radius: 2px;
-    background-color: var(--default-font-color);
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    border: var(--default-border);
   }
 
 
-
-}
-
-
-/* extra extra large displays
-@media  adnd (min-width:1680px) and (max-width:1800px) {
-  
-} */
+  /* extra extra large displays
+  @media  adnd (min-width:1680px) and (max-width:1800px) {
+    
+  } */
