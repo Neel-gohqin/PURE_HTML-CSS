@@ -10,6 +10,8 @@ A college webpage,people can visit and explore via webrowser. <br>
 3.Login-Register<br>
 </p>
 
-preview-> https://relaxed-douhua-290d1e.netlify.app/
+<a href="https://adorable-sopapillas-5c72bb.netlify.app/">Preview<a>
+
+preview-> 
 </center>
 
