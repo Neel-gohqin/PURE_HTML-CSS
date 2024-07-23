@@ -6,5 +6,5 @@
 2.Remove<br>
 3.Update<br>
 4.Responsive<br></p>
-<a href="https://dulcet-muffin-279abb.netlify.app/" style="text-decoration: none;">Preview<a> - <p>https://dulcet-muffin-279abb.netlify.app/<p>
+<a href="https://dulcet-muffin-279abb.netlify.app/" style="text-decoration: none;">Preview<a> - https://dulcet-muffin-279abb.netlify.app/
 </center>
